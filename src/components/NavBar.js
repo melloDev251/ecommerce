@@ -42,7 +42,14 @@ const Center = styled.div`
 `;
 const Logo = styled.h1`
   font-weight: bold;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
+  transition: all 0.5s ease;
+
+  &:hover {
+    text-decoration: line-through;
+    text-align: center;
+    letter-spacing: 0.5em;
+  }
 `;
 
 const Right = styled.div`
@@ -64,12 +71,12 @@ const NavBar = () => {
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            <Input />
-            <Search style={{color:"black", fontSize:20}} />
+            <Input placeholder="Search here..." />
+            <Search style={{ color: "black", fontSize: 20 }} />
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>WESH.</Logo>
+          <Logo>WESH</Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>

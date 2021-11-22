@@ -9,12 +9,20 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   font-style: 14px;
+  position: sticky;
+  position: --webkit-sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
 `;
 
 const Annonce = () => {
     return (
         <Container>
-            Super Deal ! Free Shipping on Orders Over $50
+            Great website to better buy coloring pages for children with -30% off for this month only! Take advantage now
         </Container>
     )
 }
