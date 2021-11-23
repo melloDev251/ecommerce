@@ -10,7 +10,7 @@ const Container = styled.div`
   justify-content: center;
   font-style: 14px;
   position: sticky;
-  position: --webkit-sticky;
+  /* position: --webkit-sticky; */
   top: 0;
   right: 0;
   left: 0;
